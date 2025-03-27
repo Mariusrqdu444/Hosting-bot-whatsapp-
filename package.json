@@ -1,0 +1,41 @@
+{
+  "name": "whatsapp-sender",
+  "version": "1.0.0",
+  "description": "WhatsApp Messaging Server without QR code scanning",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "cd client && npm run build",
+    "postinstall": "cd client && npm install"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "whatsapp",
+    "messaging",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.5.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "pg-promise": "^11.5.4",
+    "connect-pg-simple": "^9.0.1",
+    "fs-extra": "^11.1.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.10.0",
+    "qrcode-terminal": "^0.12.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
